@@ -1,0 +1,4 @@
+Lernkarte 1: db1bern
+Lernkarte 2: db2lima
+Lernkarte 3: db3paris
+Lernkarte 4: db4rom
