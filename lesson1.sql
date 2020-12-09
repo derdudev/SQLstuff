@@ -22,3 +22,18 @@ SELECT Price FROM Products ORDER BY Price ASC --Preise in aufsteigender Reihenfo
 
 SELECT DISTINCT City From Customers --Wie viele Customer aus verschiedenen Städten?
 
+INSERT INTO Customers VALUES (9999, "Carne de Mamacita", "Maria Gonzales", "Gran Via les Corts 660", "Barcelona", "08010", "Spain")
+
+INSERT INTO Employees (LastName, FirstName, BirthDate, Photo, Notes) VALUES ("Fischer", "Tarek", "1992-12-30", "tarekFischer92.pic", "Absolvent. Bachelor. Probezeit 6 Monate.")
+
+update Employees set Notes = "Praktikantin (3 Monate). Studiert Informatik." where EmployeeID = 11
+
+UPDATE Employees SET Notes = "1992-11-30" WHERE EmployeeID = 12
+
+delete from Employees where EmployeeID = 11 --delete entry in table Employees with EmployeeID == 11
+
+insert into Orders (CustomerID, EmployeeID, OrderDate, ShipperID) values (2, 1, "2017-06-22", 2)
+
+insert into OrderDetails (OrderID, ProductID, Quantity) values (10444, 56, 34)
+
+
