@@ -36,4 +36,6 @@ insert into Orders (CustomerID, EmployeeID, OrderDate, ShipperID) values (2, 1, 
 
 insert into OrderDetails (OrderID, ProductID, Quantity) values (10444, 56, 34)
 
+SELECT * FROM OrderDetails WHERE OrderID >= 10444
+
 
