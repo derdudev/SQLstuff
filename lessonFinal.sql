@@ -25,3 +25,15 @@ FROM kunden as k, bestellt as b
 WHERE k.KNr = b.KNr
 GROUP BY k.KNr
 
+--g
+SELECT a.Name as "Produktname", COUNT(*) as Bestellungen
+FROM artikel as a, bestellt as b, kunden as k
+WHERE a.ANr = b.ANr
+GROUP BY a.ANr
+ORDER BY Bestellungen DESC
+
+--h
+SELECT CONCAT(k.Vorname, " ", k.Nachname) as Kunde, SUM(a.Preis*b.Anzahl) as Gesamtkosten
+FROM bestellt as b, kunden as k, artikel as a
+WHERE b.KNr = k.KNr AND a.ANr = b.ANr
+GROUP BY k.KNr
